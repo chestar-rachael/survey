@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="index.css">
+
+    <head>
+
+    <body>
+        <h1 id="title">
+            Hope to save the Girl child Survey Form.
+            <p id=description>We appreciate that you have taken time to give us feedback</p>
+            <form method="post" id="survey-form">
+                <fieldset>
+                    <label for="name" id="name-label">Enter Your Name: <input id="name" name="name" type="text"
+                            placeholder="Enter Your Name: " required /></label>
+                    <label id="email-label" for="email">Enter Your Email: <input id="email" name="email" type="email"
+                            placeholder="Enter Your email: " required /></label>
+                    <label id="number-label" for="number">Input your age (years): <input id="number" type="number"
+                            name="age" min="13" placeholder="Enter Your Age: " max="120" /></label>
+                </fieldset>
+                <fieldset>
+                    <label for="dropdown">How did you hear about us?
+                        <select id="dropdown" name="dropdown">
+                            <option value="">(select one)</option>
+                            <option value="1">Youtube Channel</option>
+                            <option value="2">Instagram Channel</option>
+                            <option value="3">Hope Organization Forum</option>
+                            <option value="4">Others</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Account type</legend>
+                    <label for="personal-account"><input id="personal-account" type="radio" value="1"
+                            name="account-type" class="inline" checked /> Personal</label>
+                    <label for="volunteer-account"><input id="volunteer-account" type="radio" value="2"
+                            name="account-type" class="inline" /> Volunteer</label>
+                    <label for="business-account"><input id="business-account" type="radio" value="3"
+                            name="account-type" class="inline" /> Business</label>
+                </fieldset>
+                <fieldset>
+                    <legend>What area are you intrested in?</legend>
+                        <input type="checkbox" id="full-time" name="full-time" value="full-time" class="outline">
+                        <label for="full-time" class="outline">full-time</label><br>
+
+                        <input type="checkbox" id="part-time" name="part-time" value="part-time" class="outline">
+                        <label for="" class="outline">part-time</label><br>
+
+                        <input type="checkbox" id="full-employment" name="full-employment" value="full-employment" class="outline">
+                        <label for="full-employment" class="outline">full-employment</label><br>
+
+                        <input type="checkbox" id="volunteer" name="volunteer" value="volunteer" class="outline">
+                        <label for="volunteer" class="outline">volunteer</label><br>
+                        <label for="bio" id="bio">Provide a bio:
+                            <textarea id="bio" name="bio" rows="3" cols="30"
+                                placeholder="I like helping the needy..."></textarea>
+                        </label>
+                    </fieldset>
+                    <input id="submit" for="submit" type="submit" value="Submit" />
+            </form>
+        </h1>
+    </body>
+
+    </html>
